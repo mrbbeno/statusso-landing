@@ -2,19 +2,25 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const loginUrl = `${import.meta.env.VITE_APP_URL}/login`;
 
   return (
-    <div className="landing-page">
+    <div className={`landing-page ${isMenuOpen ? 'menu-active' : ''}`}>
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="container nav-container">
           <div className="logo">
             Statusso<span>.</span>
           </div>
-          <div className="nav-links">
-            <a href="#how" className="nav-link">How it works</a>
-            <a href="#features" className="nav-link">Features</a>
+
+          <button className="mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? '✕' : '☰'}
+          </button>
+
+          <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
+            <a href="#how" className="nav-link" onClick={() => setIsMenuOpen(false)}>How it works</a>
+            <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href={loginUrl} className="btn btn-secondary">Login</a>
             <a href={loginUrl} className="btn btn-primary">Try for Free</a>
           </div>

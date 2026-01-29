@@ -22,7 +22,7 @@ function App() {
             <a href="#how" className="nav-link" onClick={() => setIsMenuOpen(false)}>How it works</a>
             <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href={loginUrl} className="btn btn-secondary">Login</a>
-            <a href={loginUrl} className="btn btn-primary">Try for Free</a>
+            <a href={`${loginUrl}?plan=free`} className="btn btn-primary">Try for Free</a>
           </div>
         </div>
       </nav>
@@ -37,7 +37,7 @@ function App() {
               The professional way to share project progress. One link, full transparency, zero interruptions. Built for freelancers who value their deep-work time.
             </p>
             <div className="hero-btns">
-              <a href={loginUrl} className="btn btn-primary">Start for Free</a>
+              <a href={`${loginUrl}?plan=free`} className="btn btn-primary">Start for Free</a>
               <a href="#how" className="btn btn-secondary">See how it works</a>
             </div>
           </div>
@@ -116,7 +116,7 @@ function App() {
                 <li>Single workspace</li>
                 <li>Standard support</li>
               </ul>
-              <a href={loginUrl} className="btn btn-secondary" style={{ width: '100%' }}>Get Started</a>
+              <a href={`${loginUrl}?plan=free`} className="btn btn-secondary" style={{ width: '100%' }}>Get Started</a>
             </div>
             {/* Pro */}
             <div className="pricing-card featured">
@@ -130,7 +130,7 @@ function App() {
                 <li>Advanced Dashboard</li>
                 <li>White-labeled views</li>
               </ul>
-              <a href={loginUrl} className="btn btn-primary" style={{ width: '100%' }}>Go Pro</a>
+              <a href={`${loginUrl}?plan=pro`} className="btn btn-primary" style={{ width: '100%' }}>Go Pro</a>
             </div>
             {/* Enterprise */}
             <div className="pricing-card">
@@ -152,7 +152,7 @@ function App() {
       <section className="cta">
         <div className="container">
           <h2 className="cta-title">Stop the "How's it going?" emails.</h2>
-          <a href={loginUrl} className="btn btn-primary btn-lg" style={{ padding: '20px 48px', fontSize: '18px' }}>Get Started with Statusso</a>
+          <a href={`${loginUrl}?plan=free`} className="btn btn-primary btn-lg" style={{ padding: '20px 48px', fontSize: '18px' }}>Get Started with Statusso</a>
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const loginUrl = `${import.meta.env.VITE_APP_URL}/login`;
+  const signupUrl = `${import.meta.env.VITE_APP_URL}/signup`;
 
   return (
     <div className={`landing-page ${isMenuOpen ? 'menu-active' : ''}`}>
@@ -22,7 +23,7 @@ function App() {
             <a href="#how" className="nav-link" onClick={() => setIsMenuOpen(false)}>How it works</a>
             <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
             <a href={loginUrl} className="btn btn-secondary">Login</a>
-            <a href={`${loginUrl}?plan=free`} className="btn btn-primary">Try for Free</a>
+            <a href={signupUrl} className="btn btn-primary">Try for Free</a>
           </div>
         </div>
       </nav>
@@ -116,7 +117,7 @@ function App() {
                 <li>Single workspace</li>
                 <li>Standard support</li>
               </ul>
-              <a href={`${loginUrl}?plan=free`} className="btn btn-secondary" style={{ width: '100%' }}>Get Started</a>
+              <a href={`${signupUrl}?plan=free`} className="btn btn-secondary" style={{ width: '100%' }}>Get Started</a>
             </div>
             {/* Pro */}
             <div className="pricing-card featured">
@@ -130,7 +131,7 @@ function App() {
                 <li>Advanced Dashboard</li>
                 <li>White-labeled views</li>
               </ul>
-              <a href={`${loginUrl}?plan=pro`} className="btn btn-primary" style={{ width: '100%' }}>Go Pro</a>
+              <a href={`${signupUrl}?plan=pro`} className="btn btn-primary" style={{ width: '100%' }}>Go Pro</a>
             </div>
             {/* Enterprise */}
             <div className="pricing-card">
@@ -142,7 +143,7 @@ function App() {
                 <li>API & Webhooks</li>
                 <li>Custom domain (Beta)</li>
               </ul>
-              <a href={loginUrl} className="btn btn-secondary" style={{ width: '100%' }}>Contact Us</a>
+              <a href={signupUrl} className="btn btn-secondary" style={{ width: '100%' }}>Contact Us</a>
             </div>
           </div>
         </div>
@@ -152,7 +153,7 @@ function App() {
       <section className="cta">
         <div className="container">
           <h2 className="cta-title">Stop the "How's it going?" emails.</h2>
-          <a href={`${loginUrl}?plan=free`} className="btn btn-primary btn-lg" style={{ padding: '20px 48px', fontSize: '18px' }}>Get Started with Statusso</a>
+          <a href={`${signupUrl}?plan=free`} className="btn btn-primary btn-lg" style={{ padding: '20px 48px', fontSize: '18px' }}>Get Started with Statusso</a>
         </div>
       </section>
 

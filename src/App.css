@@ -345,13 +345,12 @@
 
 .pricing-coming-soon {
   font-size: 30px;
-  font-weight: 800;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: var(--text-main);
   margin-bottom: 32px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 64px;
+  align-items: baseline;
+  letter-spacing: -0.04em;
 }
 
 .pricing-price span {

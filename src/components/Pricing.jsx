@@ -37,7 +37,7 @@ const Pricing = () => {
                 'Email support',
                 'Mobile app access'
             ],
-            cta: 'Start Free Trial',
+            cta: 'Start Free',
             popular: false
         },
         {
@@ -55,14 +55,14 @@ const Pricing = () => {
                 'Custom domain',
                 'Advanced analytics'
             ],
-            cta: 'Start Free Trial',
+            cta: 'Start Pro',
             popular: true
         },
         {
             name: 'Agency',
             description: 'For large organizations',
-            monthlyPrice: 'Comin Soon',
-            annualPrice: 'Comin Soon',
+            monthlyPrice: 'Coming Soon',
+            annualPrice: 'Coming Soon',
             features: [
                 'Everything in Pro',
                 'Dedicated account manager',
@@ -81,7 +81,7 @@ const Pricing = () => {
             <div className="container">
                 <div className="section-header">
                     <h2>Simple, Transparent Pricing</h2>
-                    <p>No hidden fees. Cancel anytime. 14-day free trial on all plans.</p>
+                    <p>No hidden fees. Cancel anytime.</p>
                 </div>
 
                 <div className="pricing-toggle">
@@ -92,9 +92,6 @@ const Pricing = () => {
                     >
                         <span className="toggle-slider"></span>
                     </button>
-                    <span className={isAnnual ? 'active' : ''}>
-                        Annual <span className="save-badge">Save 20%</span>
-                    </span>
                 </div>
 
                 <div className="pricing-grid">

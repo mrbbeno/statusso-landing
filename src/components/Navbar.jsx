@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-logo">
                         <span className="logo-icon">⚡</span>
-                        <span className="logo-text">Trace</span>
+                        <span className="logo-text">Status.so</span>
                     </div>
 
                     <div className="navbar-links">

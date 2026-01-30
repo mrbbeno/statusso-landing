@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="footer-brand">
                         <div className="footer-logo">
                             <span className="logo-icon">⚡</span>
-                            <span className="logo-text">Trace</span>
+                            <span className="logo-text">Status.so</span>
                         </div>
                         <p className="footer-tagline">
                             Keep your clients in the loop without the endless status updates.
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2026 Trace. All rights reserved.</p>
+                    <p>&copy; 2026 Status.so. All rights reserved.</p>
                     <p>Made with ❤️ for freelancers and agencies worldwide.</p>
                 </div>
             </div>

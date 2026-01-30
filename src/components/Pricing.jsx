@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Pricing.css';
 
 const Pricing = () => {
-    const [isAnnual, setIsAnnual] = useState(true);
     const pricingRef = useRef(null);
 
     useEffect(() => {
@@ -84,15 +83,7 @@ const Pricing = () => {
                     <p>No hidden fees. Cancel anytime.</p>
                 </div>
 
-                <div className="pricing-toggle">
-                    <span className={!isAnnual ? 'active' : ''}>Monthly</span>
-                    <button
-                        className={`toggle-switch ${isAnnual ? 'annual' : ''}`}
-                        onClick={() => setIsAnnual(!isAnnual)}
-                    >
-                        <span className="toggle-slider"></span>
-                    </button>
-                </div>
+
 
                 <div className="pricing-grid">
                     {plans.map((plan, index) => (
@@ -112,9 +103,7 @@ const Pricing = () => {
                                 {typeof plan.monthlyPrice === 'number' ? (
                                     <>
                                         <span className="currency">$</span>
-                                        <span className="amount">
-                                            {isAnnual ? plan.annualPrice : plan.monthlyPrice}
-                                        </span>
+                                        <span className="amount">{plan.monthlyPrice}</span>
                                         <span className="period">/month</span>
                                     </>
                                 ) : (

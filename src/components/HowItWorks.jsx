@@ -25,27 +25,27 @@ const HowItWorks = () => {
     const steps = [
         {
             number: '01',
-            title: 'Create Your Project',
-            description: 'Set up a new project in seconds. Add tasks, milestones, and estimated completion dates.',
+            title: 'Add a Project',
+            description: 'Input project details, set a value and deadline, and assign it to a client in seconds.',
             icon: '📝'
         },
         {
             number: '02',
-            title: 'Share the Link',
-            description: 'Generate a custom link and send it to your client. They can bookmark it for instant access.',
-            icon: '🔗'
+            title: 'Manage Workflow',
+            description: 'Move cards through the visual Kanban board. Update statuses from "To Do" to "In Progress" to "Done".',
+            icon: '📋'
         },
         {
             number: '03',
-            title: 'Update Progress',
-            description: 'Mark tasks as complete, add notes, and adjust timelines. Changes appear instantly on the client dashboard.',
-            icon: '✅'
+            title: 'Share Access',
+            description: 'Send clients a secure, read-only link to their personal portal. No login required for them.',
+            icon: '🔗'
         },
         {
             number: '04',
-            title: 'Stay Transparent',
-            description: 'Clients see exactly where their project stands. No more "checking in" emails or status calls.',
-            icon: '🎯'
+            title: 'Track Growth',
+            description: 'Watch your Monthly Recurring Revenue (MRR) grow on the dashboard as you complete more projects.',
+            icon: '📈'
         }
     ];
 
@@ -53,8 +53,8 @@ const HowItWorks = () => {
         <section id="how-it-works" className="how-it-works section" ref={stepsRef}>
             <div className="container">
                 <div className="section-header">
-                    <h2>How It Works</h2>
-                    <p>Get started in minutes. No complex setup, no learning curve.</p>
+                    <h2>How Statusso Works</h2>
+                    <p>A simple, powerful workflow designed for modern agencies.</p>
                 </div>
 
                 <div className="steps-container">
@@ -76,10 +76,10 @@ const HowItWorks = () => {
                 </div>
 
                 <div className="cta-box">
-                    <h3>Ready to Transform Your Client Communication?</h3>
-                    <p>Join thousands of freelancers and agencies who've eliminated status update calls.</p>
-                    <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary btn-large">
-                        Start Your Free Trial
+                    <h3>Ready to upgrade your workflow?</h3>
+                    <p>Join hundreds of agencies managing their business with Statusso.</p>
+                    <a href="/signup" className="btn btn-primary btn-large">
+                        Get Started Now
                         <span className="arrow">→</span>
                     </a>
                 </div>

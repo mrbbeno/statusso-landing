@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Layout, Users, TrendingUp, DollarSign, Calendar, CheckCircle2, Circle, Activity } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -35,41 +36,39 @@ const Hero = () => {
                 <div className="hero-content">
                     <div className="hero-text">
                         <div className="hero-badge">
-                            <span className="badge-icon">✨</span>
-                            <span>Trusted by 1000+ Freelancers & Agencies</span>
+                            <span className="badge-icon">🚀</span>
+                            <span>Satusso 2.0 is live</span>
                         </div>
 
                         <h1 className="hero-title">
-                            Stop Answering
+                            Client Management,
                             <br />
-                            <span className="text-gradient">"Where's My Project?"</span>
+                            <span className="text-gradient">Redefined.</span>
                         </h1>
 
                         <p className="hero-description">
-                            Give your clients a custom link to track their project progress in real-time.
-                            No more status emails. No more awkward calls. Just transparent, professional updates.
+                            The all-in-one workspace for modern agencies. Manage projects,
+                            track monthly recurring revenue, and collaborate with clients in a stunning interface.
                         </p>
 
                         <div className="hero-actions">
-                            <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary btn-large">
+                            <a href="/signup" className="btn btn-primary btn-large">
                                 Start Free Trial
                                 <span className="arrow">→</span>
                             </a>
-
+                            <a href="/login" className="btn btn-secondary btn-large">
+                                View Demo
+                            </a>
                         </div>
 
                         <div className="hero-stats">
                             <div className="stat">
-                                <div className="stat-value">98%</div>
-                                <div className="stat-label">Client Satisfaction</div>
+                                <div className="stat-value">$12k</div>
+                                <div className="stat-label">Avg. Revenue Increase</div>
                             </div>
                             <div className="stat">
-                                <div className="stat-value">5hrs</div>
-                                <div className="stat-label">Saved Per Week</div>
-                            </div>
-                            <div className="stat">
-                                <div className="stat-value">24/7</div>
-                                <div className="stat-label">Client Access</div>
+                                <div className="stat-value">150+</div>
+                                <div className="stat-label">Agencies Onboarded</div>
                             </div>
                         </div>
                     </div>
@@ -83,34 +82,64 @@ const Hero = () => {
                                         <span></span>
                                         <span></span>
                                     </div>
-                                    <div className="window-title">trace.app/project/abc123</div>
+                                    <div className="window-title">app.statusso.com/dashboard</div>
                                 </div>
-                                <div className="window-content">
-                                    <div className="project-header">
-                                        <h3>Website Redesign</h3>
-                                        <span className="status-badge in-progress">In Progress</span>
+                                <div className="window-content" style={{ padding: 0, display: 'flex', height: '320px', background: 'var(--color-bg)' }}>
+                                    {/* Mini Sidebar */}
+                                    <div style={{ width: '60px', borderRight: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20px', gap: '20px' }}>
+                                        <div style={{ width: '32px', height: '32px', background: 'var(--primary)', borderRadius: '8px' }}></div>
+                                        <Layout size={20} color="var(--color-text-muted)" />
+                                        <Users size={20} color="var(--color-text-muted)" />
+                                        <TrendingUp size={20} color="var(--color-text-muted)" />
                                     </div>
-                                    <div className="progress-bar">
-                                        <div className="progress-fill" style={{ width: '65%' }}></div>
-                                    </div>
-                                    <div className="progress-text">65% Complete • Est. 5 days remaining</div>
 
-                                    <div className="task-list">
-                                        <div className="task done">
-                                            <span className="task-icon">✓</span>
-                                            <span className="task-name">Initial Design Mockups</span>
+                                    {/* Mini Dashboard Content */}
+                                    <div style={{ flex: 1, padding: '24px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px' }}>
+                                            <div>
+                                                <h3 style={{ fontSize: '18px', marginBottom: '4px' }}>Welcome back, Alex</h3>
+                                                <p style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>Here's what's happening today.</p>
+                                            </div>
+                                            <div style={{ padding: '8px 16px', borderRadius: '8px', background: 'var(--color-surface)', fontSize: '12px', fontWeight: '600' }}>
+                                                Oct 25, 2026
+                                            </div>
                                         </div>
-                                        <div className="task done">
-                                            <span className="task-icon">✓</span>
-                                            <span className="task-name">Client Feedback Round 1</span>
+
+                                        {/* Stats Row */}
+                                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '24px' }}>
+                                            <div style={{ padding: '16px', background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid var(--color-border)' }}>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                                                    <span style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>Total Revenue</span>
+                                                    <DollarSign size={14} color="var(--primary)" />
+                                                </div>
+                                                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>$48,250</div>
+                                            </div>
+                                            <div style={{ padding: '16px', background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid var(--color-border)' }}>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                                                    <span style={{ fontSize: '12px', color: 'var(--color-text-muted)' }}>Active Projects</span>
+                                                    <Activity size={14} color="#22C55E" />
+                                                </div>
+                                                <div style={{ fontSize: '20px', fontWeight: 'bold' }}>12</div>
+                                            </div>
                                         </div>
-                                        <div className="task active">
-                                            <span className="task-icon">⚡</span>
-                                            <span className="task-name">Development Phase</span>
-                                        </div>
-                                        <div className="task pending">
-                                            <span className="task-icon">○</span>
-                                            <span className="task-name">Testing & QA</span>
+
+                                        {/* Projects List */}
+                                        <div style={{ background: 'var(--color-surface)', borderRadius: '12px', border: '1px solid var(--color-border)', padding: '16px' }}>
+                                            <div style={{ fontSize: '13px', fontWeight: '600', marginBottom: '12px', borderBottom: '1px solid var(--color-border)', paddingBottom: '8px' }}>Recent Projects</div>
+                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px' }}>
+                                                    <span>Website Redesign</span>
+                                                    <span style={{ color: 'var(--primary)' }}>In Progress</span>
+                                                </div>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px' }}>
+                                                    <span>Mobile App Dev</span>
+                                                    <span style={{ color: 'var(--color-text-muted)' }}>Done</span>
+                                                </div>
+                                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px' }}>
+                                                    <span>SEO Campaign</span>
+                                                    <span style={{ color: 'var(--color-text-muted)' }}>To Do</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -25,50 +25,49 @@ const Pricing = () => {
     const plans = [
         {
             name: 'Free',
-            description: 'Perfect for solo freelancers',
+            description: 'For solo freelancers',
             monthlyPrice: 0,
             annualPrice: 0,
             features: [
-                '1 active User',
-                'Up to 3 active projects',
-                'Unlimited client links',
-                'Basic customization',
-                'Email support',
-                'Mobile app access'
+                '1 Admin User',
+                'Up to 3 Active Clients',
+                'Unlimited Projects',
+                'Standard Client Portal',
+                'Basic Revenue Tracking',
+                'Community Support'
             ],
             cta: 'Start Free',
             popular: false
         },
         {
             name: 'Pro',
-            description: 'For growing teams',
-            monthlyPrice: 19,
-            annualPrice: 19,
+            description: 'For growing agencies',
+            monthlyPrice: 29,
+            annualPrice: 29,
             features: [
-                'Unlimited clients',
-                'Unlimited projects',
-                'Unlimited client links',
-                'Full white-label branding',
-                'Priority support',
-                'Team collaboration',
-                'Custom domain',
-                'Advanced analytics'
+                'Unlimited Admin Users',
+                'Unlimited Clients',
+                'White-Label Portals',
+                'Custom Domain (CNAME)',
+                'Priority Email Support',
+                'Advanced Analytics',
+                'Export Data to CSV'
             ],
             cta: 'Start Pro',
             popular: true
         },
         {
             name: 'Agency',
-            description: 'For large organizations',
-            monthlyPrice: 'Coming Soon',
-            annualPrice: 'Coming Soon',
+            description: 'For large teams',
+            monthlyPrice: 'Contact',
+            annualPrice: 'Contact',
             features: [
                 'Everything in Pro',
-                'Dedicated account manager',
-                'Custom integrations',
-                'SLA guarantee',
-                'On-premise option',
-                'Advanced security'
+                'Dedicated Account Manager',
+                'SLA & 99.9% Uptime',
+                'Custom Integrations',
+                'SSO Authentication',
+                'Onboarding Setup'
             ],
             cta: 'Contact Sales',
             popular: false
@@ -121,7 +120,7 @@ const Pricing = () => {
                             </ul>
 
                             <a
-                                href={`https://statusso-frontend.vercel.app/signup?plan=${plan.name.toLowerCase()}`}
+                                href={`/signup?plan=${plan.name.toLowerCase()}`}
                                 className={`btn ${plan.popular ? 'btn-primary' : 'btn-secondary'} btn-large plan-cta`}
                             >
                                 {plan.cta}

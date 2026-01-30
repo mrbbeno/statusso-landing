@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Layout, Users, TrendingUp, Shield, Smartphone, Zap } from 'lucide-react';
 import './Features.css';
 
 const Features = () => {
@@ -24,39 +25,39 @@ const Features = () => {
 
     const features = [
         {
-            icon: '🔗',
-            title: 'Custom Client Links',
-            description: 'Generate unique, branded links for each project. Your clients get instant access to their project dashboard.',
-            color: '#ea580c'
-        },
-        {
-            icon: '📊',
-            title: 'Real-Time Progress',
-            description: 'Update task status, milestones, and timelines. Clients see changes instantly without any manual notifications.',
+            icon: <Layout size={24} />,
+            title: 'Visual Kanban Board',
+            description: 'Drag and drop projects through stages. Get a bird’s eye view of your entire pipeline instantly.',
             color: '#F97316'
         },
         {
-            icon: '⚡',
-            title: 'Automated Updates',
-            description: 'Set up automatic notifications for key milestones. Keep clients informed without lifting a finger.',
-            color: '#ea580c'
-        },
-        {
-            icon: '🎨',
-            title: 'White-Label Branding',
-            description: 'Customize the look and feel to match your brand. Add your logo, colors, and domain for a professional touch.',
+            icon: <Users size={24} />,
+            title: 'Secure Client Portals',
+            description: 'Give clients specialized access links where they can view project status, milestones, and updates in real-time.',
             color: '#F97316'
         },
         {
-            icon: '📱',
+            icon: <TrendingUp size={24} />,
+            title: 'Revenue Tracking',
+            description: 'Monitor monthly recurring revenue (MRR) and one-off project income with beautiful, auto-updating charts.',
+            color: '#F97316'
+        },
+        {
+            icon: <Zap size={24} />,
+            title: 'Optimistic UI',
+            description: 'Experience blazing fast interactions. Status updates and edits happen instantly with zero lag.',
+            color: '#F97316'
+        },
+        {
+            icon: <Smartphone size={24} />,
             title: 'Mobile-First Design',
-            description: 'Clients can check progress anywhere, anytime. Fully responsive design works perfectly on all devices.',
-            color: '#ea580c'
+            description: 'Manage your agency on the go. Full feature parity across desktop, tablet, and mobile devices.',
+            color: '#F97316'
         },
         {
-            icon: '🔒',
-            title: 'Secure & Private',
-            description: 'Each project link is private and secure. Only people with the link can access the project dashboard.',
+            icon: <Shield size={24} />,
+            title: 'Enterprise Security',
+            description: 'Your data is encrypted and secure. Granular permissions ensure clients only see what you want them to see.',
             color: '#F97316'
         }
     ];
@@ -65,8 +66,8 @@ const Features = () => {
         <section id="features" className="features section" ref={featuresRef}>
             <div className="container">
                 <div className="section-header">
-                    <h2>Everything You Need to Keep Clients Happy</h2>
-                    <p>Stop wasting time on status updates. Let Trace do the heavy lifting.</p>
+                    <h2>Everything You Need to Scale</h2>
+                    <p>Powerful tools designed to help you focus on the work, not the admin.</p>
                 </div>
 
                 <div className="features-grid">

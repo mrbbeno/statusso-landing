@@ -12,7 +12,7 @@ function App() {
       <nav className="navbar">
         <div className="container nav-container">
           <div className="logo">
-            Statusso<span>.</span>
+            Status<span>.</span>so
           </div>
 
           <button className="mobile-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -22,8 +22,9 @@ function App() {
           <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
             <a href="#how" className="nav-link" onClick={() => setIsMenuOpen(false)}>How it works</a>
             <a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a>
+            <a href="#pricing" className="nav-link" onClick={() => setIsMenuOpen(false)}>Pricing</a>
             <a href={loginUrl} className="btn btn-secondary">Login</a>
-            <a href={signupUrl} className="btn btn-primary">Try for Free</a>
+            <a href={`${signupUrl}?plan=free`} className="btn btn-primary">Try for Free</a>
           </div>
         </div>
       </nav>
@@ -112,7 +113,8 @@ function App() {
               <div className="pricing-name">Free</div>
               <div className="pricing-price">$0<span>/mo</span></div>
               <ul className="pricing-features">
-                <li>Up to 2 active projects</li>
+                <li>1 active client</li>
+                <li>Up to 3 active projects</li>
                 <li>Unlimited client views</li>
                 <li>Single workspace</li>
                 <li>Standard support</li>
@@ -125,6 +127,7 @@ function App() {
               <div className="pricing-name">Pro</div>
               <div className="pricing-price">$19<span>/mo</span></div>
               <ul className="pricing-features">
+                <li>Unlimited clients</li>
                 <li>Unlimited projects</li>
                 <li>Custom workspace link</li>
                 <li>Priority support</li>
@@ -136,14 +139,13 @@ function App() {
             {/* Enterprise */}
             <div className="pricing-card">
               <div className="pricing-name">Agency</div>
-              <div className="pricing-price">$49<span>/mo</span></div>
+              <div className="pricing-price">Coming soon</div>
               <ul className="pricing-features">
                 <li>Multiple workspaces</li>
                 <li>Team collaboration</li>
                 <li>API & Webhooks</li>
-                <li>Custom domain (Beta)</li>
+                <li>Custom domais</li>
               </ul>
-              <a href={signupUrl} className="btn btn-secondary" style={{ width: '100%' }}>Contact Us</a>
             </div>
           </div>
         </div>

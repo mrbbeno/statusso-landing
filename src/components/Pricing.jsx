@@ -120,7 +120,7 @@ const Pricing = () => {
                             </ul>
 
                             <a
-                                href={`/signup?plan=${plan.name.toLowerCase()}`}
+                                href={`https://statusso-frontend.vercel.app/signup?plan=${plan.name.toLowerCase()}`}
                                 className={`btn ${plan.popular ? 'btn-primary' : 'btn-secondary'} btn-large plan-cta`}
                             >
                                 {plan.cta}

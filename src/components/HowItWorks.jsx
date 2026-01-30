@@ -78,7 +78,7 @@ const HowItWorks = () => {
                 <div className="cta-box">
                     <h3>Ready to upgrade your workflow?</h3>
                     <p>Join hundreds of agencies managing their business with Statusso.</p>
-                    <a href="/signup" className="btn btn-primary btn-large">
+                    <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary btn-large">
                         Get Started Now
                         <span className="arrow">→</span>
                     </a>

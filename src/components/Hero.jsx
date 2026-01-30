@@ -52,11 +52,11 @@ const Hero = () => {
                         </p>
 
                         <div className="hero-actions">
-                            <a href="/signup" className="btn btn-primary btn-large">
+                            <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary btn-large">
                                 Start Free Trial
                                 <span className="arrow">→</span>
                             </a>
-                            <a href="/login" className="btn btn-secondary btn-large">
+                            <a href="https://statusso-frontend.vercel.app/login" className="btn btn-secondary btn-large">
                                 View Demo
                             </a>
                         </div>

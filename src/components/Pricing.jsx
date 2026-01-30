@@ -42,7 +42,7 @@ const Pricing = () => {
         {
             name: 'Pro',
             description: 'For growing teams',
-            monthlyPrice: 22,
+            monthlyPrice: 19,
             annualPrice: 19,
             features: [
                 'Unlimited clients',

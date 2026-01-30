@@ -159,7 +159,7 @@
 }
 
 .mockup-window {
-    background: white;
+    background: var(--color-surface);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
     overflow: hidden;

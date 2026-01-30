@@ -1,5 +1,5 @@
 .how-it-works {
-    background: white;
+    background: var(--color-bg);
 }
 
 .steps-container {
@@ -14,7 +14,7 @@
     gap: var(--space-lg);
     align-items: start;
     padding: var(--space-xl);
-    background: white;
+    background: var(--color-surface);
     border-radius: var(--radius-xl);
     border: 2px solid var(--color-border);
     margin-bottom: var(--space-xl);

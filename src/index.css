@@ -13,13 +13,14 @@
 
 :root {
   /* Colors */
-  --color-bg: #ffffff;
-  --color-primary: #ea580c;
-  --color-primary-light: #F97316;
-  --color-text: #0F172A;
-  --color-text-muted: #64748b;
-  --color-border: #e2e8f0;
-  --color-surface: #f8fafc;
+  /* Colors - Graphite & Ember (Dark Mode) */
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-primary: #F97316;
+  --color-primary-light: #FB923C;
+  --color-text: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  --color-border: #334155;
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #ea580c 0%, #F97316 100%);

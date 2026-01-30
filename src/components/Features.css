@@ -1,5 +1,5 @@
 .features {
-    background: linear-gradient(180deg, white 0%, var(--color-surface) 100%);
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
 }
 
 .section-header {
@@ -24,7 +24,7 @@
 
 .feature-card {
     padding: var(--space-xl);
-    background: white;
+    background: var(--color-surface);
     border-radius: var(--radius-xl);
     border: 1px solid var(--color-border);
     transition: all var(--transition-base);

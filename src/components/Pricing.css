@@ -1,5 +1,5 @@
 .pricing {
-    background: linear-gradient(180deg, var(--color-surface) 0%, white 100%);
+    background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
 }
 
 .pricing-toggle {
@@ -41,7 +41,7 @@
     left: 4px;
     width: 24px;
     height: 24px;
-    background: white;
+    background: var(--color-text);
     border-radius: 50%;
     transition: transform var(--transition-base);
     box-shadow: var(--shadow-sm);
@@ -73,7 +73,7 @@
 .pricing-card {
     position: relative;
     padding: var(--space-xl);
-    background: white;
+    background: var(--color-surface);
     border: 2px solid var(--color-border);
     border-radius: var(--radius-xl);
     transition: all var(--transition-base);

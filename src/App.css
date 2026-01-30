@@ -343,6 +343,17 @@
   letter-spacing: -0.04em;
 }
 
+.pricing-coming-soon {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+}
+
 .pricing-price span {
   font-size: 18px;
   color: var(--text-secondary);

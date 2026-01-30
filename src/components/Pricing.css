@@ -1,0 +1,220 @@
+.pricing {
+    background: linear-gradient(180deg, var(--color-surface) 0%, white 100%);
+}
+
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-3xl);
+    font-weight: 600;
+}
+
+.pricing-toggle span {
+    color: var(--color-text-muted);
+    transition: color var(--transition-base);
+}
+
+.pricing-toggle span.active {
+    color: var(--color-text);
+}
+
+.toggle-switch {
+    position: relative;
+    width: 60px;
+    height: 32px;
+    background: var(--color-border);
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: background var(--transition-base);
+}
+
+.toggle-switch.annual {
+    background: var(--gradient-primary);
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: transform var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.toggle-switch.annual .toggle-slider {
+    transform: translateX(28px);
+}
+
+.save-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    position: relative;
+    padding: var(--space-xl);
+    background: white;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.pricing-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: var(--delay);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.pricing-card.popular {
+    border-color: var(--color-primary);
+    border-width: 3px;
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.popular:hover {
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.375rem 1rem;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+}
+
+.plan-header {
+    margin-bottom: var(--space-lg);
+}
+
+.plan-name {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-xs);
+}
+
+.plan-description {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-right: 0.25rem;
+}
+
+.amount {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-left: 0.5rem;
+}
+
+.custom-price {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: var(--space-xl);
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.plan-cta {
+    width: 100%;
+}
+
+@media (max-width: 968px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .pricing-toggle {
+        font-size: 0.9rem;
+    }
+
+    .amount {
+        font-size: 2.5rem;
+    }
+}

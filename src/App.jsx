@@ -139,7 +139,7 @@ function App() {
             {/* Enterprise */}
             <div className="pricing-card">
               <div className="pricing-name">Agency</div>
-              <div className="pricing-price">Coming soon</div>
+              <div className="pricing-coming-soon">Coming soon</div>
               <ul className="pricing-features">
                 <li>Multiple workspaces</li>
                 <li>Team collaboration</li>

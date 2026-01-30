@@ -78,7 +78,7 @@ const HowItWorks = () => {
                 <div className="cta-box">
                     <h3>Ready to Transform Your Client Communication?</h3>
                     <p>Join thousands of freelancers and agencies who've eliminated status update calls.</p>
-                    <a href="#" className="btn btn-primary btn-large">
+                    <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary btn-large">
                         Start Your Free Trial
                         <span className="arrow">→</span>
                     </a>

@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-actions">
-                        <a href="https://statusso-frontend.vercel.app/login" className="btn btn-secondary">Login</a>
+                        <a href="https://statusso-frontend.vercel.app" className="btn btn-secondary">Login</a>
                         <a href="https://statusso-frontend.vercel.app/signup?plan=free" className="btn btn-primary">Start Free Trial</a>
                     </div>
                 </div>
